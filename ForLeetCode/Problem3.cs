@@ -8,7 +8,7 @@ namespace ForLeetCode
     {
         public int LengthOfLongestSubstring(string s)
         {
-            return 0;
+            return 1;
         }
     }
 }
