@@ -27,7 +27,7 @@ namespace ForLeetCode
             {
                 l1 = new ListNode(resultList[i], l1);
             }
-            return result;
+            return l1;
         }
     }
 
