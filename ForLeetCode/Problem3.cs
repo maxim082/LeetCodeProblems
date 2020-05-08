@@ -11,25 +11,36 @@ namespace ForLeetCode
             var result = 0;
             var buffer = "";
 
-            for (int k = 0; k < s.Length; k++)
+            if (s.Length == 0) return 0;
+            if (s.Length == 1) return 1;
+
+
+            for (int i = 0; i < s.Length; i++)
             {
-                for (int i = k; i < s.Length; i++)
+                if (!buffer.Contains(s[i]))
                 {
-                    if (!buffer.Contains(s[i]))
+                    buffer = String.Concat(buffer, s[i]);
+                }
+                else
+                {
+                    if (buffer.Length > result)
                     {
-                        buffer = String.Concat(buffer, s[i]);
+                        result = buffer.Length;
                     }
-                    else
-                    {
-                        if (buffer.Length > result)
+
+                    if (i != s.Length - 1)
+                        for (int k = i - 1; k >= 0; k--)
                         {
-                            result = buffer.Length;                            
+                            if (s[k] == s[i])
+                            {
+                                i = k;
+                                break;
+                            }
                         }
-                        buffer = "";
-                        break;
-                    }
+                    buffer = "";
                 }
             }
+
             if (buffer.Length > result) result = buffer.Length;
 
             return result;

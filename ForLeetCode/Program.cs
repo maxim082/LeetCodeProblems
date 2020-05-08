@@ -12,7 +12,7 @@ namespace ForLeetCode
 
         static void Main(string[] args)
         {
-            var result = _problem3.LengthOfLongestSubstring("jbpnbwwd");
+            var result = _problem3.LengthOfLongestSubstring("pwwkew");
             Console.WriteLine("Test Application");
         }         
     }
