@@ -6,5 +6,9 @@ namespace ForLeetCode
 {
     class Problem3
     {
+        public int LengthOfLongestSubstring(string s)
+        {
+            return 0;
+        }
     }
 }
