@@ -10,6 +10,7 @@ namespace ForLeetCode
         {
             var result = 0;
             var buffer = "";
+            var num = 0;
 
             if (s.Length == 0) return 0;
             if (s.Length == 1) return 1;
@@ -28,15 +29,8 @@ namespace ForLeetCode
                         result = buffer.Length;
                     }
 
-                    if (i != s.Length - 1)
-                        for (int k = i - 1; k >= 0; k--)
-                        {
-                            if (s[k] == s[i])
-                            {
-                                i = k;
-                                break;
-                            }
-                        }
+                    i = num + buffer.IndexOf(s[i]);
+                    num = i + 1;
                     buffer = "";
                 }
             }
