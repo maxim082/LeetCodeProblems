@@ -11,8 +11,7 @@ namespace ForLeetCode
 
         static void Main(string[] args)
         {
-            var result = _problem2.AddTwoNumbers(new ListNode(2, new ListNode(4, new ListNode(3, null))), new ListNode(5, new ListNode(6, new ListNode(4, null))));
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("Test Application");
         }         
     }
 }
