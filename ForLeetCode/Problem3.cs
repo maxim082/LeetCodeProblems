@@ -1,12 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace ForLeetCode
 {
-    class Problem3
+    public static class Problem3
     {
-        public int LengthOfLongestSubstring(string s)
+        public static int LengthOfLongestSubstring(string s)
         {
             var result = 0;
             var buffer = "";

@@ -1,12 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace ForLeetCode
+﻿namespace ForLeetCode
 {
-    class Problem1
+    public static class Problem1
     {
-        public int[] TwoSum(int[] nums, int target)
+        public static int[] TwoSum(int[] nums, int target)
         {
             for (int i = 1; i < nums.Length; i++)
             {

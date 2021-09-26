@@ -4,9 +4,9 @@ using System.Text;
 
 namespace ForLeetCode
 {
-    class Problem2
+    public static class Problem2
     {
-        public ListNode AddTwoNumbers(ListNode l1, ListNode l2)
+        public static ListNode AddTwoNumbers(ListNode l1, ListNode l2)
         {
             var resultList = new List<int>();
             int flag = 0;
