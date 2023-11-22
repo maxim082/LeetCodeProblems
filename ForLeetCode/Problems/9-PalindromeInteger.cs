@@ -1,6 +1,8 @@
 ﻿using System;
 
-public class Problem9
+namespace LeetCode.Problems;
+
+public class PalindromeInteger
 {
     public static bool IsPalindrome(int x)
     {
@@ -16,10 +18,5 @@ public class Problem9
         }
 
         return true;
-    }
-
-    public static Problem9 operator + (Problem9 left, Problem9 right)
-    {
-        return new Problem9();
     }
 }
